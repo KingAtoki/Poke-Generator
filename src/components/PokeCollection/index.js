@@ -37,7 +37,7 @@ const Collection = () => {
     <GridList cellHeight={300} className={classes.gridList} cols={1}>
       {pokemon.map((poke) => (
         <GridListTile key={poke.name} className={classes.tile}>
-          <img src={poke.sprites.front_default} alt='pokemon default image'/>
+          <img src={poke.sprites.front_default} alt={poke.name}/>
           <GridListTileBar
             title={poke.name}
             subtitle={
