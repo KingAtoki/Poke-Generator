@@ -12,7 +12,6 @@ const useStyles = makeStyles(() => ({
   },
   gridList: {
     width: '100%',
-    margin: '2px 0'
   },
 }));
 
