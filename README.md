@@ -10,4 +10,4 @@ This is a simply site that will pull 3 default Pokemon using https://pokeapi.co/
 - Run `npm install`
 - `npm run start`
 
-or to see the deployed site, visit unruffled-lovelace-1d406a.netlify.app
+or to see the deployed site, visit pokegenerator.netlify.app
