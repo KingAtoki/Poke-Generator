@@ -23,7 +23,7 @@ export const addDefaultPokemon = () => async dispatch => {
 }
 
 const randomPokemonNumber = () => {
-  const randomize = () => Math.round(Math.random() * 100) // random num 1 - 100
+  const randomize = () => Math.ceil(Math.random() * 100) // random num 1 - 100
   const defaults = [1, 4, 7] // default pokemon
   let num = randomize() // get random num
   while (defaults.includes(num)) { // make sure num is not one of the defaults
