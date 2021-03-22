@@ -19,11 +19,13 @@ export default (state = INITIAL_STATE, action = {}) => {
       return {
         ...state,
         loading: true,
+        error: ''
       };
     case GET_RANDOM_POKEMON:
       return {
         ...state,
         loading: true,
+        error: ''
       };
     case GET_POKEMON_SUCCESS:
       return {
