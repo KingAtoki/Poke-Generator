@@ -40,6 +40,5 @@ export const addRandomPokemon = () => async dispatch => {
 
   } catch (err) {
     dispatch({ type: GET_RANDOM_POKEMON_FAIL, payload: { error: err.message } })
-    throw new Error(err)
   }
 }

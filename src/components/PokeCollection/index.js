@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
 const Collection = () => {
   const dispatch = useDispatch()
   const classes = useStyles();
-  const { pokemon } = useSelector(state => state.pokemon)
+  const { pokemon, error } = useSelector(state => state.pokemon)
 
   useEffect(() => {
     dispatch(addDefaultPokemon())
@@ -53,11 +53,16 @@ const Collection = () => {
     </GridList>
   )
 
-
+  const renderError = () => (
+    <>
+      <p>Here's the error message: {error}</p>
+      <p>Please try to press the button below again unless you've pressed it 5000 in one hour.</p>
+    </>
+  )
 
   return (
     <div className={classes.root}>
-      {renderCollection()}
+      {!error ? renderCollection() : renderError()}
     </div>
   );
 }
