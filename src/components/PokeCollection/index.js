@@ -1,13 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 import { makeStyles } from '@material-ui/core/styles';
-import {
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
-  Typography,
-} from '@material-ui/core';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { addDefaultPokemon } from '../../redux/pokemon.actions'
 
 const useStyles = makeStyles((theme) => ({
@@ -15,15 +8,6 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     flexDirection: 'column',
     marginTop: '60px',
-  },
-  heading: {
-    fontSize: theme.typography.pxToRem(15),
-    fontWeight: theme.typography.fontWeightRegular,
-  },
-  gridList: {
-    width: '100%',
-    height: 175,
-    margin: '2px 0',
   },
 }));
 
