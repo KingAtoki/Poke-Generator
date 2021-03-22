@@ -21,12 +21,12 @@ const RandomButton = () => {
   return (
     <ButtonGroup color="primary" aria-label="outlined primary button group">
       <Button
-        className={ classes.button}
+        className={classes.button}
         variant="contained"
         size="large"
         onClick={getRandomPokemon}
       >
-        Get a random pokemon
+        Get a Random Pokemon
       </Button>
     </ButtonGroup>
   )
