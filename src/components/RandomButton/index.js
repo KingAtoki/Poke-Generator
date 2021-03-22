@@ -5,7 +5,7 @@ import { addRandomPokemon } from '../../redux/pokemon.actions'
 
 const useStyles = makeStyles((theme) => ({
   button: {
-    backgroundColor: theme.palette.primary.light,
+    backgroundColor: theme.palette.primary.main,
     color: theme.palette.primary.black
   },
 }));
